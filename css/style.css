@@ -2,29 +2,32 @@
     box-sizing: border-box;
 }
 
-.nav-container { 
+/* utility classes */
+
+.flex-row-between {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-
-.nav-container > ul {
-    list-style-type: none;
-}
-
-.nav-contact-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.contact-inputs {
+.flex-column-center {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
-.contact-inputs > input {
+
+
+
+
+
+
+nav > ul {
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.input {
     border-radius: 35%;
     padding: 5%;
     margin-right: 10%;
@@ -34,22 +37,10 @@
 .contact-submit {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center;   
 }
 
-.hero-container { 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
-}
-
-.hero-inner-container { 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-}
 
 .projects-section {
     margin-top: 5%;
@@ -70,11 +61,7 @@
     justify-content:center;
 }
 
-.contact-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
+
 
 .contact-container > form {
     margin-right: 5%;
@@ -82,8 +69,6 @@
 
 
 
-.social-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
+
+
+
