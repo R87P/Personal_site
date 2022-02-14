@@ -1,5 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Ruda&display=swap');
+
+
+$body-color: #f2ccc3;
+$light-blue: #80ced7;
+$dark-green: #263d42;
+$white-variant: #ffe6e8;
+$purple-variant: #8e6c88;
+$light-green: #acd8aa;
+
+$main-font:'Gideon Roman', cursive;
+$secondary-font: 'Ruda', sans-serif;;
+
 * {
     box-sizing: border-box;
+}
+
+body{
+    background-color: $body-color;
 }
 
 /* utility classes */
@@ -15,11 +32,6 @@
     flex-direction: column;
     align-items: center;
 }
-
-
-
-
-
 
 
 nav > ul {
@@ -66,9 +78,5 @@ nav > ul {
 .contact-container > form {
     margin-right: 5%;
 }
-
-
-
-
 
 
