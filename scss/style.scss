@@ -1,6 +1,15 @@
 @import 'config';
-@import 'utilites';
+// @import 'utilites';
 
+$body-color: rgba(242, 205, 196, 0.7);
+$light-blue: rgb(128, 206, 215, 0.3);
+$dark-green: #263d42;
+$white-variant: #ffe6e8;
+$purple-variant: #8e6c88;
+$light-green: #acd8aa;
+
+$main-font:'Gideon Roman', cursive;
+$secondary-font: 'Ruda', sans-serif;;
 
 
 * {
@@ -11,35 +20,84 @@ body{
     background-color: $body-color;
 }
 
-nav > ul {
-    list-style-type: none;
-    cursor: pointer;
+nav {
 
-    li {
-        font-family: $secondary-font;
-        font-size: medium;
-}
-
-    li:hover {
-        text-decoration: underline;
-        color: $white-variant;
-    }
+    margin-bottom: 10%;
     
+        ul {
+        list-style-type: none;
+        cursor: pointer;
 
+            li {
+                font-family: $secondary-font;
+                font-size: large;
+                color: $light-green;
+                font-weight: bold;
+                text-shadow: 0px 0px 20px $white-variant;
+             }
+
+            li:hover {
+                text-decoration: underline;
+                color: $white-variant;
+            }
+        }
+    }
+
+
+
+/* utility classes */
+
+.flex-row-between {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
+
+.flex-column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
 
 
 .input {
-    border-radius: 35%;
-    padding: 5%;
+    border-radius: 5%;
+    padding: 2%;
     margin-right: 10%;
-    width: 80%;
+    height: 45%;
+    width: 100%;
+    background-color: $light-blue;
+    color: $purple-variant;
+    border: none;
 }
+
+::placeholder {
+    color: $dark-green;
+    opacity: .5;
+}
+
+
 
 .contact-submit {
     display: flex;
     flex-direction: column;
-    justify-content: center;   
+    justify-content: center;
+    
+    button {
+        background-color: $light-blue;
+        border-radius: 20%;
+        border: 2px solid $purple-variant;
+        color: $white-variant;
+    }
+
+    button:hover {
+        color:$light-blue;
+        background-color: $white-variant;
+        border: 2px solid $light-green;
+    }
 }
 
 

@@ -5,29 +5,87 @@
 }
 
 body {
-  background-color: #f2ccc3;
+  background-color: rgba(242, 205, 196, 0.7);
 }
 
-nav > ul {
+nav {
+  margin-bottom: 10%;
+}
+
+nav ul {
   list-style-type: none;
   cursor: pointer;
 }
 
-nav > ul li {
+nav ul li {
   font-family: "Ruda", sans-serif;
-  font-size: medium;
+  font-size: large;
+  color: #acd8aa;
+  font-weight: bold;
+  text-shadow: 0px 0px 20px #ffe6e8;
 }
 
-nav > ul li:hover {
+nav ul li:hover {
   text-decoration: underline;
   color: #ffe6e8;
 }
 
+/* utility classes */
+.flex-row-between {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-column-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .input {
-  border-radius: 35%;
-  padding: 5%;
+  border-radius: 5%;
+  padding: 2%;
   margin-right: 10%;
-  width: 80%;
+  height: 45%;
+  width: 100%;
+  background-color: #80ced7;
+  color: #8e6c88;
+  border: none;
+}
+
+::-webkit-input-placeholder {
+  color: #263d42;
+  opacity: .5;
+}
+
+:-ms-input-placeholder {
+  color: #263d42;
+  opacity: .5;
+}
+
+::-ms-input-placeholder {
+  color: #263d42;
+  opacity: .5;
+}
+
+::placeholder {
+  color: #263d42;
+  opacity: .5;
 }
 
 .contact-submit {
@@ -41,6 +99,19 @@ nav > ul li:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.contact-submit button {
+  background-color: #80ced7;
+  border-radius: 20%;
+  border: 2px solid #8e6c88;
+  color: #ffe6e8;
+}
+
+.contact-submit button:hover {
+  color: #80ced7;
+  background-color: #ffe6e8;
+  border: 2px solid #acd8aa;
 }
 
 .projects-section {
