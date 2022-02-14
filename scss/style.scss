@@ -1,15 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Ruda&display=swap');
+@import 'config';
+@import 'utilites';
 
 
-$body-color: #f2ccc3;
-$light-blue: #80ced7;
-$dark-green: #263d42;
-$white-variant: #ffe6e8;
-$purple-variant: #8e6c88;
-$light-green: #acd8aa;
-
-$main-font:'Gideon Roman', cursive;
-$secondary-font: 'Ruda', sans-serif;;
 
 * {
     box-sizing: border-box;
@@ -18,27 +10,6 @@ $secondary-font: 'Ruda', sans-serif;;
 body{
     background-color: $body-color;
 }
-
-/* utility classes */
-
-.flex-row-between {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.flex-column-center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-// .nav-text {
-//     font-family: $secondary-font;
-//     font-size: medium;
-// }
-
 
 
 
