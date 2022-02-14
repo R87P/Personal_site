@@ -34,10 +34,35 @@ body{
 }
 
 
+// .nav-text {
+//     font-family: $secondary-font;
+//     font-size: medium;
+// }
+
+
+
+
+
+
+
+
 nav > ul {
     list-style-type: none;
     cursor: pointer;
+
+    li {
+        font-family: $secondary-font;
+        font-size: medium;
 }
+
+    li:hover {
+        text-decoration: underline;
+        color: $white-variant;
+    }
+    
+
+}
+
 
 .input {
     border-radius: 35%;

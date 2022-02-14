@@ -40,6 +40,16 @@ nav > ul {
   cursor: pointer;
 }
 
+nav > ul li {
+  font-family: "Ruda", sans-serif;
+  font-size: medium;
+}
+
+nav > ul li:hover {
+  text-decoration: underline;
+  color: #ffe6e8;
+}
+
 .input {
   border-radius: 35%;
   padding: 5%;
