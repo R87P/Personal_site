@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Ruda&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Festive&family=Redressed&family=Shizuru&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 body {
-  background-color: rgba(242, 205, 196, 0.7);
+  background-color: rgba(242, 205, 196, 0.2);
 }
 
 nav {
@@ -18,16 +18,16 @@ nav ul {
 }
 
 nav ul li {
-  font-family: "Ruda", sans-serif;
+  font-family: "Shizuru", cursive;
   font-size: large;
-  color: #acd8aa;
+  color: #80ced7;
   font-weight: bold;
-  text-shadow: 0px 0px 20px #ffe6e8;
+  text-shadow: 0px 0px 10px grey;
 }
 
 nav ul li:hover {
-  text-decoration: underline;
-  color: #ffe6e8;
+  text-transform: capitalize;
+  color: royalblue;
 }
 
 /* utility classes */
@@ -44,6 +44,19 @@ nav ul li:hover {
           justify-content: space-between;
 }
 
+.flex-row-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
 .flex-column-center {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -57,13 +70,30 @@ nav ul li:hover {
           align-items: center;
 }
 
+.m-b1 {
+  margin-bottom: 55%;
+}
+
+.m-t1 {
+  margin-top: 10%;
+}
+
+.font-style1 {
+  color: #80ced7;
+  font-family: "Shizuru", cursive;
+}
+
+.text-align {
+  text-align: center;
+}
+
 .input {
   border-radius: 5%;
   padding: 2%;
   margin-right: 10%;
-  height: 45%;
+  height: 25%;
   width: 100%;
-  background-color: #80ced7;
+  background-color: rgba(186, 207, 209, 0.5);
   color: #8e6c88;
   border: none;
 }
@@ -99,23 +129,26 @@ nav ul li:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 8%;
 }
 
 .contact-submit button {
-  background-color: #80ced7;
+  background-color: transparent;
   border-radius: 20%;
-  border: 2px solid #8e6c88;
-  color: #ffe6e8;
+  border: none;
+  color: grey;
 }
 
 .contact-submit button:hover {
   color: #80ced7;
   background-color: #ffe6e8;
-  border: 2px solid #acd8aa;
+  border: 1px solid #80ced7;
+  margin-top: 2%;
 }
 
 .projects-section {
-  margin-top: 5%;
+  margin-top: 10%;
+  margin-bottom: 15%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -128,6 +161,58 @@ nav ul li:hover {
           justify-content: space-evenly;
 }
 
+.projects-section div {
+  border-radius: 50%;
+}
+
+.projects-section h2 {
+  font-family: "Redressed", cursive;
+  color: #80ced7;
+}
+
+.projects-section img {
+  width: 250px;
+  border-radius: 5%;
+  padding: 25;
+  margin-top: 5%;
+  margin-bottom: 15%;
+}
+
+.projects-section button {
+  margin: 5%;
+  border-radius: 25%;
+  background-color: transparent;
+  border-radius: 20%;
+  border: none;
+  color: #8e6c88;
+  font-weight: bolder;
+  font-family: "Shizuru", cursive;
+}
+
+.projects-section button:hover {
+  color: #80ced7;
+  background-color: #ffe6e8;
+  border: 1px solid #80ced7;
+  margin-top: 2%;
+  cursor: pointer;
+  color: #acd8aa;
+}
+
+.projects-section .project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 2%;
+  padding-top: 2%;
+}
+
 .skills-contact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -138,6 +223,15 @@ nav ul li:hover {
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.skills-contact label {
+  font-size: "Redressed", cursive;
+}
+
+.skills-list {
+  font-family: "Redressed", cursive;
+  font-size: larger;
 }
 
 .build-container {
@@ -153,7 +247,32 @@ nav ul li:hover {
           justify-content: center;
 }
 
+.contact-info p {
+  font-family: "Redressed", cursive;
+  font-size: large;
+}
+
+.contact-info h3 {
+  font-family: "Redressed", cursive;
+}
+
 .contact-container > form {
   margin-right: 5%;
+}
+
+.hero-h1 {
+  font-family: "Redressed", cursive;
+  color: #80ced7;
+  font-size: xx-large;
+  font-weight: bolder;
+  text-shadow: 0px 0px 50px #80ced7;
+}
+
+.hero-p {
+  font-family: 'Festive', cursive;
+  font-size: xx-large;
+  color: black;
+  font-weight: bolder;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
