@@ -6,6 +6,7 @@ $fourth-color: #f45b69;
 $fifth-color: #b0a1ba;
 $sixth-color: #8e6c88;
 $seventh-color: #acd8aa;
+$body-color: #e9d3d0;
 
 $main-font:'Redressed', cursive;;
 $secondary-font: 'Shrikhand', cursive;
@@ -18,7 +19,7 @@ $fourth-font: 'Akaya Telivigala', cursive;
 }
 
 body {
-    // background-color: rgba(0, 51, 153, 0.8);
+    background-color: $body-color;
 }
 
 nav {
@@ -91,7 +92,8 @@ nav {
 
 .font-style2 {
     font-family: $third-font;
-    color: $secondary-blue
+    color: $secondary-blue;
+    text-shadow: 0px 0px 15px grey;
 }
 
 .text-align {
@@ -276,6 +278,7 @@ nav {
     text-shadow: 2px 2px 20px grey;
     width: 55%;
     height: 15em;
+    margin-right: 2%;
 }
 
 .anime-me {

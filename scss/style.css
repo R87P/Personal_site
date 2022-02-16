@@ -4,6 +4,10 @@
           box-sizing: border-box;
 }
 
+body {
+  background-color: #e9d3d0;
+}
+
 nav {
   margin-bottom: 5%;
 }
@@ -100,6 +104,7 @@ nav ul li:hover {
 .font-style2 {
   font-family: "Gochi Hand", cursive;
   color: #028090;
+  text-shadow: 0px 0px 15px grey;
 }
 
 .text-align {
@@ -327,6 +332,7 @@ nav ul li:hover {
   text-shadow: 2px 2px 20px grey;
   width: 55%;
   height: 15em;
+  margin-right: 2%;
 }
 
 .anime-me {
