@@ -1,15 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Festive&family=Redressed&family=Shizuru&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Fasthand&family=Gochi+Hand&family=Redressed&family=Shrikhand&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-body {
-  background-color: rgba(242, 205, 196, 0.2);
-}
-
 nav {
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 
 nav ul {
@@ -18,16 +14,16 @@ nav ul {
 }
 
 nav ul li {
-  font-family: "Shizuru", cursive;
+  font-family: "Shrikhand", cursive;
   font-size: large;
-  color: #80ced7;
+  color: #b0a1ba;
   font-weight: bold;
   text-shadow: 0px 0px 10px grey;
 }
 
 nav ul li:hover {
   text-transform: capitalize;
-  color: royalblue;
+  color: #8e6c88;
 }
 
 /* utility classes */
@@ -74,13 +70,19 @@ nav ul li:hover {
   margin-bottom: 55%;
 }
 
+.m-b2 {
+  margin-bottom: 8%;
+}
+
 .m-t1 {
   margin-top: 10%;
 }
 
 .font-style1 {
-  color: #80ced7;
-  font-family: "Shizuru", cursive;
+  color: grey;
+  font-family: "Akaya Telivigala", cursive;
+  text-shadow: 0px 0px 10px grey;
+  font-size: xx-large;
 }
 
 .text-align {
@@ -93,28 +95,28 @@ nav ul li:hover {
   margin-right: 10%;
   height: 25%;
   width: 100%;
-  background-color: rgba(186, 207, 209, 0.5);
-  color: #8e6c88;
+  background-color: #e4fde1;
+  color: #028090;
   border: none;
 }
 
 ::-webkit-input-placeholder {
-  color: #263d42;
+  color: #acd8aa;
   opacity: .5;
 }
 
 :-ms-input-placeholder {
-  color: #263d42;
+  color: #acd8aa;
   opacity: .5;
 }
 
 ::-ms-input-placeholder {
-  color: #263d42;
+  color: #acd8aa;
   opacity: .5;
 }
 
 ::placeholder {
-  color: #263d42;
+  color: #acd8aa;
   opacity: .5;
 }
 
@@ -141,9 +143,9 @@ nav ul li:hover {
 }
 
 .contact-submit button:hover {
-  color: #80ced7;
-  background-color: #ffe6e8;
-  border: 1px solid #80ced7;
+  color: #028090;
+  background-color: #e4fde1;
+  border: 1px solid #028090;
 }
 
 .projects-section {
@@ -170,8 +172,8 @@ nav ul li:hover {
 }
 
 .projects-section h2 {
-  font-family: "Redressed", cursive;
-  color: #80ced7;
+  font-family: "Gochi Hand", cursive;
+  color: #028090;
 }
 
 .projects-section img {
@@ -190,13 +192,13 @@ nav ul li:hover {
   border: none;
   color: #8e6c88;
   font-weight: bolder;
-  font-family: "Shizuru", cursive;
+  font-family: "Shrikhand", cursive;
 }
 
 .projects-section button:hover {
-  color: #80ced7;
-  background-color: #ffe6e8;
-  border: 1px solid #80ced7;
+  color: #003399;
+  background-color: #e4fde1;
+  border: 1px solid #028090;
   margin-top: 2%;
   cursor: pointer;
   color: #acd8aa;
@@ -223,15 +225,15 @@ nav ul li:hover {
   background-color: transparent;
   border-radius: 20%;
   border: none;
-  color: #8e6c88;
+  color: #b0a1ba;
   font-weight: bolder;
-  font-family: "Shizuru", cursive;
+  font-family: "Shrikhand", cursive;
 }
 
 #form-btn:hover {
-  color: #80ced7;
-  background-color: #ffe6e8;
-  border: 1px solid #80ced7;
+  color: #028090;
+  background-color: #e4fde1;
+  border: 1px solid #028090;
   margin-top: 2%;
   cursor: pointer;
   color: #acd8aa;
@@ -254,7 +256,7 @@ nav ul li:hover {
 }
 
 .skills-list {
-  font-family: "Redressed", cursive;
+  font-family: "Akaya Telivigala", cursive;
   font-size: larger;
 }
 
@@ -286,18 +288,26 @@ nav ul li:hover {
 
 .hero-h1 {
   font-family: "Redressed", cursive;
-  color: #80ced7;
+  color: #028090;
   font-size: xx-large;
   font-weight: bolder;
-  text-shadow: 0px 0px 50px #80ced7;
+  text-shadow: 0px 0px 50px #028090;
 }
 
 .hero-p {
-  font-family: 'Festive', cursive;
+  font-family: 'Fasthand', cursive;
   font-size: xx-large;
   color: black;
   font-weight: bolder;
   text-align: center;
+  background-image: url(/img/paper.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 5%;
+  padding: 5% 2% 5% 2%;
+  -webkit-box-shadow: 0px 0px 10px 10px grey;
+          box-shadow: 0px 0px 10px 10px grey;
+  text-shadow: 2px 2px 20px grey;
 }
 
 .anime-me {
@@ -309,19 +319,11 @@ nav ul li:hover {
           justify-content: center;
 }
 
-.social-icons i {
-  color: #8e6c88;
+.anime-me img {
+  z-index: 10;
 }
 
-@media screen and (min-width: 480px) {
-  * {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
+.social-icons i {
+  color: #8e6c88;
 }
 /*# sourceMappingURL=style.css.map */
