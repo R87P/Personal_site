@@ -11,6 +11,17 @@ nav {
 nav ul {
   list-style-type: none;
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2% 15% 0% 15%;
 }
 
 nav ul li {
@@ -19,6 +30,7 @@ nav ul li {
   color: #b0a1ba;
   font-weight: bold;
   text-shadow: 0px 0px 10px grey;
+  padding: 20%;
 }
 
 nav ul li:hover {
@@ -71,7 +83,7 @@ nav ul li:hover {
 }
 
 .m-b2 {
-  margin-bottom: 8%;
+  margin-bottom: 5%;
 }
 
 .m-t1 {
@@ -177,7 +189,7 @@ nav ul li:hover {
 }
 
 .projects-section img {
-  width: 250px;
+  width: 500px;
   border-radius: 5%;
   padding: 25;
   margin-top: 5%;
@@ -303,11 +315,13 @@ nav ul li:hover {
   background-image: url(/img/paper.jpg);
   background-size: cover;
   background-position: center;
-  border-radius: 5%;
-  padding: 5% 2% 5% 2%;
+  border-radius: 10%;
+  padding: 2% 2% 5% 2%;
   -webkit-box-shadow: 0px 0px 10px 10px grey;
           box-shadow: 0px 0px 10px 10px grey;
   text-shadow: 2px 2px 20px grey;
+  width: 55%;
+  height: 15em;
 }
 
 .anime-me {
