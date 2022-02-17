@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Fasthand&family=Gochi+Hand&family=Redressed&family=Shrikhand&display=swap');
-$primary-color: #003399;
+$primary-color: #5EBEC4;
 $secondary-blue: #028090;
 $third-color: #e4fde1;
 $fourth-color: #f45b69;
-$fifth-color: #b0a1ba;
+$fifth-color: #F92C85;
 $sixth-color: #8e6c88;
 $seventh-color: #acd8aa;
-$body-color: #e9d3d0;
+$body-color: #FDF5DF;
 
 $main-font:'Redressed', cursive;;
 $secondary-font: 'Shrikhand', cursive;
@@ -351,3 +351,13 @@ nav {
 //         flex-direction: column;
 //     }
 // }
+
+.blob {
+    position: absolute;
+    top: 0;
+    left: 0;
+    fill: white;
+    width: 20em;
+    z-index: -1;
+    
+  }
