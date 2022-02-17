@@ -2,10 +2,11 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  cursor: url(/img/quill.png);
 }
 
 body {
-  background-color: #e9d3d0;
+  background-color: #FDF5DF;
 }
 
 nav {
@@ -39,7 +40,7 @@ nav ul li {
 
 nav ul li:hover {
   text-transform: capitalize;
-  color: #003399;
+  color: #5EBEC4;
 }
 
 /* utility classes */
@@ -218,7 +219,7 @@ nav ul li:hover {
 }
 
 .projects-section button:hover {
-  color: #003399;
+  color: #5EBEC4;
   background-color: #e4fde1;
   border: 1px solid #028090;
   margin-top: 2%;
@@ -247,7 +248,7 @@ nav ul li:hover {
   background-color: transparent;
   border-radius: 20%;
   border: none;
-  color: #b0a1ba;
+  color: #F92C85;
   font-weight: bolder;
   font-family: "Shrikhand", cursive;
 }
@@ -398,5 +399,14 @@ nav ul li:hover {
 .github {
   background-color: black;
   color: black;
+}
+
+.blob {
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: white;
+  width: 20em;
+  z-index: -1;
 }
 /*# sourceMappingURL=style.css.map */
