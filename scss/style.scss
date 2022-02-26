@@ -26,6 +26,9 @@ body {
 nav {
         // background-color: $secondary-blue;
         margin-bottom: 5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     
             ul {
             list-style-type: none;
@@ -45,10 +48,10 @@ nav {
                     padding: 20%;
                 }
 
-                li:hover {
-                    text-transform: capitalize;
-                    color: $fourth-color;
-                }
+                // li:hover {
+                //     text-transform: capitalize;
+                //     color: $fourth-color;
+                // }
             }
     }
 
@@ -91,7 +94,7 @@ nav {
 }
 
 .font-style1 {
-    color: grey;
+    color: $fifth-color;
     font-family: $fourth-font;
     text-shadow: 0px 0px 10px grey;
     font-size: xx-large;
@@ -298,15 +301,28 @@ nav {
 }
 
 
+footer {
+
+    img:hover {
+        cursor: pointer;
+       scale: 2%;
+    }
+}
+
 .social-icons {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     i {
-        color: $sixth-color;
+        color: $fifth-color;
+        text-shadow: 0 0 30px $secondary-blue;
         font-size: xx-large;
         padding: 1%;
-    
+        padding-top: 10%;
+    }
+    i:hover {
+        cursor: pointer;
+        color: $secondary-blue;
     }
 }
 
@@ -361,12 +377,6 @@ nav {
   }
 
   
-// @media screen and (min-width: 480px) {
-//     * {
-//         display: flex;
-//         flex-direction: column;
-//     }
-// }
 .speech-bubble {
 	position: relative;
 	background: rgba(0, 170, 187,0.7);
@@ -419,11 +429,12 @@ nav {
 	position: relative;
 	background: #00aabb;
 	border-radius: .4em;
-    height: 6em;
-    width: 10%;
-    padding: 2% 0% 0% 5%;
+    height: 3em;
+    width: 7%;
     font-family: $main-font;
     margin: 0% 0% 0% 5%;
+    text-align: center;
+    font-size: large;
 }
 
 .speech-bubble3:after {
@@ -439,4 +450,21 @@ nav {
 	border-bottom: 0;
 	margin-top: -10px;
 	margin-right: -20px;
+}
+
+
+@media screen and (max-width: 414px) {
+    nav{
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+        }
+
+    nav:hover {
+        cursor: pointer;
+    }
+
+    .icon-bar {
+       font-size: 8px;
+    }
 }

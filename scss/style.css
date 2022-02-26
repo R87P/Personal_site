@@ -11,6 +11,16 @@ body {
 
 nav {
   margin-bottom: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 nav ul {
@@ -36,11 +46,6 @@ nav ul li {
   font-weight: bold;
   text-shadow: 0px 0px 10px grey;
   padding: 20%;
-}
-
-nav ul li:hover {
-  text-transform: capitalize;
-  color: #f45b69;
 }
 
 /* utility classes */
@@ -109,7 +114,7 @@ nav ul li:hover {
 }
 
 .font-style1 {
-  color: grey;
+  color: #F92C85;
   font-family: "Akaya Telivigala", cursive;
   text-shadow: 0px 0px 10px grey;
   font-size: xx-large;
@@ -362,6 +367,11 @@ nav ul li:hover {
   z-index: 10;
 }
 
+footer img:hover {
+  cursor: pointer;
+  scale: 2%;
+}
+
 .social-icons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -376,9 +386,16 @@ nav ul li:hover {
 }
 
 .social-icons i {
-  color: #8e6c88;
+  color: #F92C85;
+  text-shadow: 0 0 30px #028090;
   font-size: xx-large;
   padding: 1%;
+  padding-top: 10%;
+}
+
+.social-icons i:hover {
+  cursor: pointer;
+  color: #028090;
 }
 
 .icon-bar {
@@ -482,11 +499,12 @@ nav ul li:hover {
   position: relative;
   background: #00aabb;
   border-radius: .4em;
-  height: 6em;
-  width: 10%;
-  padding: 2% 0% 0% 5%;
+  height: 3em;
+  width: 7%;
   font-family: "Redressed", cursive;
   margin: 0% 0% 0% 5%;
+  text-align: center;
+  font-size: large;
 }
 
 .speech-bubble3:after {
@@ -502,5 +520,24 @@ nav ul li:hover {
   border-bottom: 0;
   margin-top: -10px;
   margin-right: -20px;
+}
+
+@media screen and (max-width: 414px) {
+  nav {
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  nav:hover {
+    cursor: pointer;
+  }
+  .icon-bar {
+    font-size: 8px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
