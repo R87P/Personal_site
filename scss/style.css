@@ -189,6 +189,80 @@ nav ul li {
   border: 1px solid #028090;
 }
 
+.greeting-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.greeting-section .speech-bubble3 {
+  position: relative;
+  background: rgba(0, 170, 187, 0.5);
+  border-radius: .4em;
+  height: 2em;
+  width: 7%;
+  font-family: "Redressed", cursive;
+  margin: 0% 0% 0% 5%;
+  text-align: center;
+  font-size: large;
+}
+
+.greeting-section .speech-bubble3 img {
+  height: 35rem;
+  width: 25rem;
+  margin-left: 25%;
+}
+
+.greeting-section .speech-bubble3:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-left-color: rgba(0, 170, 187, 0.5);
+  border-right: 0;
+  border-bottom: 0;
+  margin-top: -10px;
+  margin-right: -20px;
+}
+
+.greeting-section .hero-p {
+  font-family: 'Fasthand', cursive;
+  font-size: xx-large;
+  color: black;
+  font-weight: bolder;
+  text-align: center;
+  background-image: url(/img/paper.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10%;
+  padding: 2% 2% 5% 2%;
+  -webkit-box-shadow: 0px 0px 10px 10px grey;
+          box-shadow: 0px 0px 10px 10px grey;
+  text-shadow: 2px 2px 20px grey;
+  width: 55%;
+  height: 15em;
+  margin-right: 2%;
+}
+
+.projects {
+  margin-top: 10%;
+  text-align: center;
+  color: #F92C85;
+  font-family: "Akaya Telivigala", cursive;
+  text-shadow: 0px 0px 10px grey;
+  font-size: xx-large;
+}
+
 .projects-section {
   margin-top: 10%;
   margin-bottom: 15%;
@@ -231,18 +305,17 @@ nav ul li {
   background-color: transparent;
   border-radius: 20%;
   border: none;
-  color: #8e6c88;
+  color: #F92C85;
   font-weight: bolder;
   font-family: "Shrikhand", cursive;
 }
 
 .projects-section button:hover {
-  color: #5EBEC4;
-  background-color: #e4fde1;
-  border: 1px solid #028090;
+  color: #FDF5DF;
+  background-color: #028090;
+  border: 1px solid black;
   margin-top: 2%;
   cursor: pointer;
-  color: #acd8aa;
 }
 
 .projects-section .project {
@@ -260,27 +333,7 @@ nav ul li {
   padding-top: 2%;
 }
 
-#form-btn {
-  margin: 5%;
-  border-radius: 25%;
-  background-color: transparent;
-  border-radius: 20%;
-  border: none;
-  color: #F92C85;
-  font-weight: bolder;
-  font-family: "Shrikhand", cursive;
-}
-
-#form-btn:hover {
-  color: #028090;
-  background-color: #e4fde1;
-  border: 1px solid #028090;
-  margin-top: 2%;
-  cursor: pointer;
-  color: #acd8aa;
-}
-
-.skills-contact {
+.skills-contact-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -292,16 +345,16 @@ nav ul li {
       justify-content: space-around;
 }
 
-.skills-contact label {
+.skills-contact-section label {
   font-size: "Redressed", cursive;
 }
 
-.skills-list {
+.skills-contact-section .skills-list {
   font-family: "Akaya Telivigala", cursive;
   font-size: larger;
 }
 
-.build-container {
+.skills-contact-section .build-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -314,47 +367,64 @@ nav ul li {
           justify-content: center;
 }
 
-.contact-info p {
+.skills-contact-section .speech-bubble2 {
+  position: relative;
+  background: #00aabb;
+  border-radius: .4em;
+  height: 6em;
+  padding: 2%;
+  font-family: "Redressed", cursive;
+}
+
+.skills-contact-section .speech-bubble2:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-left-color: #00aabb;
+  border-right: 0;
+  border-bottom: 0;
+  margin-top: -10px;
+  margin-right: -20px;
+}
+
+.skills-contact-section .contact-info p {
   font-family: "Redressed", cursive;
   font-size: large;
 }
 
-.contact-info h3 {
+.skills-contact-section .contact-info h3 {
   font-family: "Redressed", cursive;
 }
 
-.contact-container > form {
+.skills-contact-section .contact-container > form {
   margin-right: 5%;
 }
 
-.hero-h1 {
-  font-family: "Redressed", cursive;
+.skills-contact-section #form-btn {
+  margin: 5%;
+  border-radius: 25%;
+  background-color: transparent;
+  border-radius: 20%;
+  border: none;
+  color: #F92C85;
+  font-weight: bolder;
+  font-family: "Shrikhand", cursive;
+}
+
+.skills-contact-section #form-btn:hover {
   color: #028090;
-  font-size: xx-large;
-  font-weight: bolder;
-  text-shadow: 0px 0px 50px #028090;
+  background-color: #e4fde1;
+  border: 1px solid #028090;
+  margin-top: 2%;
+  cursor: pointer;
+  color: #acd8aa;
 }
 
-.hero-p {
-  font-family: 'Fasthand', cursive;
-  font-size: xx-large;
-  color: black;
-  font-weight: bolder;
-  text-align: center;
-  background-image: url(/img/paper.jpg);
-  background-size: cover;
-  background-position: center;
-  border-radius: 10%;
-  padding: 2% 2% 5% 2%;
-  -webkit-box-shadow: 0px 0px 10px 10px grey;
-          box-shadow: 0px 0px 10px 10px grey;
-  text-shadow: 2px 2px 20px grey;
-  width: 55%;
-  height: 15em;
-  margin-right: 2%;
-}
-
-.anime-me {
+.anime-me-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -363,91 +433,11 @@ nav ul li {
           justify-content: center;
 }
 
-.anime-me img {
+.anime-me-section img {
   z-index: 10;
 }
 
-footer img:hover {
-  cursor: pointer;
-  scale: 2%;
-}
-
-.social-icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.social-icons i {
-  color: #F92C85;
-  text-shadow: 0 0 30px #028090;
-  font-size: xx-large;
-  padding: 1%;
-  padding-top: 10%;
-}
-
-.social-icons i:hover {
-  cursor: pointer;
-  color: #028090;
-}
-
-.icon-bar {
-  position: fixed;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-/* Style the icon bar links */
-.icon-bar a {
-  display: block;
-  text-align: center;
-  padding: 16px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  color: white;
-  font-size: 20px;
-  border-radius: 15%;
-}
-
-/* Style the social media icons with color, if you want */
-.icon-bar a:hover {
-  background-color: #F92C85;
-}
-
-.facebook {
-  background: rgba(59, 89, 152, 0.8);
-  color: white;
-}
-
-.twitter {
-  background: rgba(85, 172, 238, 0.8);
-  color: white;
-}
-
-.google {
-  background: rgba(221, 75, 57, 0.8);
-  color: white;
-}
-
-.linkedin {
-  background: rgba(0, 123, 181, 0.8);
-  color: white;
-}
-
-.github {
-  background-color: rgba(0, 0, 0, 0.8);
-  color: black;
-}
-
-.speech-bubble {
+.anime-me-section .speech-bubble {
   position: relative;
   background: rgba(0, 170, 187, 0.7);
   border-radius: .4em;
@@ -456,7 +446,7 @@ footer img:hover {
   font-family: "Redressed", cursive;
 }
 
-.speech-bubble:after {
+.anime-me-section .speech-bubble:after {
   content: '';
   position: absolute;
   left: 0;
@@ -471,58 +461,90 @@ footer img:hover {
   margin-left: -20px;
 }
 
-.speech-bubble2 {
-  position: relative;
-  background: #00aabb;
-  border-radius: .4em;
-  height: 6em;
-  padding: 2%;
-  font-family: "Redressed", cursive;
+footer {
+  /* Style the icon bar links */
+  /* Style the social media icons with color, if you want */
 }
 
-.speech-bubble2:after {
-  content: '';
-  position: absolute;
-  right: 0;
+footer img:hover {
+  cursor: pointer;
+  scale: 2%;
+}
+
+footer .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .social-icons i {
+  color: #F92C85;
+  text-shadow: 0 0 30px #028090;
+  font-size: xx-large;
+  padding: 1%;
+  padding-top: 10%;
+}
+
+footer .social-icons i:hover {
+  cursor: pointer;
+  color: #028090;
+}
+
+footer .icon-bar {
+  position: fixed;
   top: 50%;
-  width: 0;
-  height: 0;
-  border: 20px solid transparent;
-  border-left-color: #00aabb;
-  border-right: 0;
-  border-bottom: 0;
-  margin-top: -10px;
-  margin-right: -20px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
-.speech-bubble3 {
-  position: relative;
-  background: #00aabb;
-  border-radius: .4em;
-  height: 3em;
-  width: 7%;
-  font-family: "Redressed", cursive;
-  margin: 0% 0% 0% 5%;
+footer .icon-bar a {
+  display: block;
   text-align: center;
-  font-size: large;
+  padding: 16px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+  border-radius: 15%;
 }
 
-.speech-bubble3:after {
-  content: '';
-  position: absolute;
-  right: 0;
-  top: 50%;
-  width: 0;
-  height: 0;
-  border: 20px solid transparent;
-  border-left-color: #00aabb;
-  border-right: 0;
-  border-bottom: 0;
-  margin-top: -10px;
-  margin-right: -20px;
+footer .icon-bar a:hover {
+  background-color: #F92C85;
 }
 
-@media screen and (max-width: 414px) {
+footer .facebook {
+  background: rgba(59, 89, 152, 0.8);
+  color: white;
+}
+
+footer .twitter {
+  background: rgba(85, 172, 238, 0.8);
+  color: white;
+}
+
+footer .google {
+  background: rgba(221, 75, 57, 0.8);
+  color: white;
+}
+
+footer .linkedin {
+  background: rgba(0, 123, 181, 0.8);
+  color: white;
+}
+
+footer .github {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: black;
+}
+
+@media screen and (max-width: 480px) {
   nav {
     list-style-type: none;
     display: -webkit-box;
@@ -538,6 +560,52 @@ footer img:hover {
   }
   .icon-bar {
     font-size: 8px;
+  }
+  .greeting-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .greeting-section .speech-bubble3 {
+    margin: 20% 0 20% 0;
+    width: 20%;
+  }
+  .greeting-section .speech-bubble3 img {
+    height: 25rem;
+    width: 25rem;
+  }
+  .greeting-section .hero-p {
+    font-size: larger;
+    width: 100%;
+    margin-top: 25rem;
+  }
+  .projects {
+    margin-top: 5em;
+  }
+  .skills-contact-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .skills-contact-section .skills-list {
+    margin-bottom: 5rem;
+  }
+  .skills-contact-section .build-container {
+    margin-bottom: 3rem;
+  }
+  .anime-me-section img {
+    height: 25rem;
+    width: 15rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
